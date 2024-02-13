@@ -2,7 +2,7 @@
   "name": "mapping-app",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://robinahunter.github.io/Mappping-App",
+  "homepage": "https://robinahunter.github.io/Mapping-App",
   "type": "module",
   "scripts": {
     "frontend": "vite",

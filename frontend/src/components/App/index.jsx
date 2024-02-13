@@ -26,7 +26,7 @@ function App() {
       <div className="flex mt-3 mx-auto max-w-l sm:px-6 lg:px-8 shadow-xl">
         <nav className="flex mx-auto justify-between items-center">
           <div className="flex w-[90vw] justify-between items-center md:hidden">
-            <Link to="/" onClick={toggleMenu}>
+            <Link to="/Mapping-App" onClick={toggleMenu}>
               <div className='block justify-between'>
                 <h2 className="text-lg">MauiNuiWai | Wai = Water</h2>
               </div>
@@ -45,7 +45,7 @@ function App() {
       {menuOpen && (
         <div className="block lg:block mt-1 py-1 lg:flex lg:items-center lg:w-auto shadow-xl">
           <div className="logo hidden lg:block">
-            <Link to="/" onClick={toggleMenu}>
+            <Link to="/Mapping-App" onClick={toggleMenu}>
               {/* <div className="flex">
                 <ul className="pl-4">
                   <li className="w-12 justify-between">
@@ -115,7 +115,7 @@ function App() {
       )}
 
       <div className="hidden mx-auto md:flex md:items-center md:w-auto max-w-4xl">
-      <Link to="/" className="flex justify-center items-center">              
+      <Link to="/Mapping-App" className="flex justify-center items-center">              
               <div className="flex">
                 <ul className="pl-4">
                   <li className="w-9 justify-between">
@@ -184,7 +184,7 @@ function App() {
 
     <Routes>
       <Route path="/learnMore" element={<LearnMorePage />} />
-      <Route path="/" element={<HomePage isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />} />
+      <Route path="/Mapping-App" element={<HomePage isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />} />
       <Route path="/auth/:formType" element={<AuthFormPage setIsAuthenticated={setIsAuthenticated} />} />
       <Route path="/logout" element={<AuthFormPage setIsAuthenticated={setIsAuthenticated} />} />
       <Route path="/user/:id" element={<UserPage />} />
