@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => {
     },
     root: path.resolve(__dirname, 'frontend'),
     plugins: [react()],
-    base: './',
+    base: '/Mapping-App/',
     resolve: {
       alias: {
         // Setup an alias for the ArcGIS API

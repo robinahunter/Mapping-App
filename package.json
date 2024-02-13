@@ -3,15 +3,16 @@
   "private": true,
   "version": "0.0.0",
   "homepage": "https://robinahunter.github.io/Mappping-App/",
+  "type": "module",
   "scripts": {
     "frontend": "vite",
     "backend": "nodemon backend/server.js",
-    "build": "dotenv vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.17",

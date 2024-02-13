@@ -71,40 +71,6 @@ const HomePage = () => {
             view.ui.add(toggle, 'top-right');
         });
      
-    
-
-        //         const fountainLayer = new FeatureLayer({
-        //             url: "https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/Water_Fountains_Locations/FeatureServer",
-        //             renderer: new SimpleRenderer(customRenderer),
-        //             popupTemplate: new PopupTemplate({
-        //                 content: [
-        //                     {
-        //                         type: 'text',
-        //                         text: '{Location}'
-        //                     },
-        //                     {
-        //                         type: 'media',
-        //                         mediaInfos: [
-        //                             {
-        //                                 type: 'image',
-        //                                 value: {
-        //                                     sourceURL: '{imageUrl}',
-        //                                     width: '50px', // Adjust the width of the image
-        //                                     height: 'auto' // Maintain aspect ratio
-        //                                 }
-        //                             }
-        //                         ]
-        //                     },
-        //                     {
-        //                         type: 'text',
-        //                         text: '<a href="https://www.google.com/maps/search/?api=1&query={latitude},{longitude}" target="_blank">Get Directions</a>'
-        //                     }
-        //                 ]
-        //             }),
-        //         });
-            
-        //         map.add(fountainLayer,0);
-        //     });
 
 // Create a new FeatureLayer instance with the specified URL
 const featureLayer = new FeatureLayer({
