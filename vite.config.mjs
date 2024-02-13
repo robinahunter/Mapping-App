@@ -18,7 +18,7 @@ export default defineConfig(({ mode }) => {
     build: {
       outDir: 'dist',
     },
-    root: path.resolve(__dirname, 'frontend'),
+    root: path.resolve(__dirname),
     plugins: [react()],
     base: '/Mapping-App/',
     resolve: {
