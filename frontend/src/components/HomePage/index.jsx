@@ -74,7 +74,7 @@ const HomePage = () => {
 
 // Create a new FeatureLayer instance with the specified URL
 const featureLayer = new FeatureLayer({
-    url: 'https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/Water_Fountains_Locations/FeatureServer'
+    url: 'https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/water_fountains/FeatureServer'
 });
 
 // Add the FeatureLayer to the map
@@ -102,7 +102,11 @@ const popupTemplate = {
     content: [
         {
             type: 'text',
-            text: 'Drinking Fountain <a href="https://www.google.com/maps/search/?api=1&query={Latitude},{Longitude}" target="_blank">Get Directions</a>'
+            text: 'Drinking Fountain'
+        },
+        {
+            type: 'text',
+            text: '<a href="https://www.google.com/maps/search/?api=1&query={Latitude},{Longitude}" target="_blank">Get Directions</a>'
         },
         {
             type: 'text',
