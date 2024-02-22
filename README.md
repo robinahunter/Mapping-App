@@ -43,3 +43,7 @@ As stretch goals the app will feature a scavenger hunt across the island, and us
 
 Deploy vite project on Github-Pages by Aishwarya Parab:
 https://medium.com/@aishwaryaparab1/deploying-vite-deploying-vite-app-to-github-pages-166fff40ffd3
+
+Build React Skeleton Loading Component with CSS Animation, Dipesh Malvia
+https://www.youtube.com/watch?v=B0-IamekWy4
+
