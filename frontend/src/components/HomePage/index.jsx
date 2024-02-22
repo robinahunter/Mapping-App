@@ -78,7 +78,7 @@ const HomePage = () => {
             type: 'simple',
             symbol: {
                 type: 'simple-marker',
-                style: '../../assets/waterIcon.png',
+                url: '../../assets/water-drop-maui-01.svg',
                 // color: '#06b6d4',
                 size: 20,
             }
@@ -132,40 +132,27 @@ const HomePage = () => {
       initializeArcGIS();
     }, []);
 
-//     return (
-//         <div>
-//             {/* Conditionally render skeleton or loading indicator while map is loading */}
-//             {loading && (
-//                 <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-//                     <Skeleton width={400} height={20} color="#ccc" />
-//                     <Skeleton width={400} height={20} color="#ccc" />
-//                     <Skeleton width={400} height={20} color="#ccc" />
-//                 </div>
-//             )}
+    return (
+        <div style={{ position: 'relative', height: '100vh', width: '100vw' }}>
+            {/* Skeleton loading indicator */}
+            {loading && (
+                <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
+                    <div>
+                        <Skeleton width={400} height={20} />
+                        <Skeleton width={400} height={20} />
+                        <Skeleton width={400} height={20} />
+                    </div>
+                </div>
+            )}
 
-//             {/* Render 'viewDiv' once map is loaded */}
-//             {!loading && (
-//                 <div id="viewDiv" style={{ height: '100vh', width: '100vw', padding: 0, margin: 0 }}>
-//                     {/* SceneView component will be initialized here */}
-//                 </div>
-//             )}
-//         </div>
-//     );
-// };
+            {/* Map container */}
+            <div id="viewDiv" style={{ height: '100%', width: '100%', padding: 0, margin: 0 }}></div>
+        </div>
+    );
+};
 
-//       // If loading, display Skeleton loading placeholders
-//     if (loading) {
-//         return (
-//         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-//             <Skeleton width={400} height={20} />
-//             <Skeleton width={400} height={20} />
-//             <Skeleton width={400} height={20} />
-//         </div>
-//         );
-//     }
-
-//     // If not loading, return the map view
-    return <div id="viewDiv" style={{ height: '100vh', width: '100vw', padding: 0, margin: 0 }}></div>;
-  };
+//     //return the map view
+//     return <div id="viewDiv" style={{ height: '100vh', width: '100vw', padding: 0, margin: 0 }}></div>;
+//   };
   
   export default HomePage;
