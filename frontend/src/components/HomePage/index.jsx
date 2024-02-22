@@ -78,9 +78,13 @@ const HomePage = () => {
             type: 'simple',
             symbol: {
                 type: 'simple-marker',
-                url: '../../assets/water-drop-maui-01.svg',
-                // color: '#06b6d4',
-                size: 20,
+                url: "../../assets/water-drop-maui-01.svg",
+                color: '#06b6d4',
+                size: 8,
+                outline: {
+                    color: [0, 0, 0, 0], // Specify transparent outline
+                    width: 0 // Set outline width to 0 to make it invisible
+                }
             }
         };
         featureLayer.renderer = renderer;
@@ -126,7 +130,7 @@ const HomePage = () => {
         // Simulate a loading delay for demonstration purposes
         setTimeout(() => {
         setLoading(false); // Set loading to false when initialization is complete
-        }, 6000);
+        }, 5000);
       };
     
       initializeArcGIS();
@@ -138,9 +142,9 @@ const HomePage = () => {
             {loading && (
                 <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
                     <div>
-                        <Skeleton width={400} height={20} />
-                        <Skeleton width={400} height={20} />
-                        <Skeleton width={400} height={20} />
+                        <Skeleton width={400} height={40} />
+                        <Skeleton width={400} height={40} color="red" />
+                        <Skeleton width={400} height={40} color="#ccc" />
                     </div>
                 </div>
             )}
