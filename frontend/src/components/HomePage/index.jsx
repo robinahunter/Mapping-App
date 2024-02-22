@@ -64,19 +64,10 @@ const HomePage = () => {
             // Add widget to the top right corner of the view
             view.ui.add(toggle, 'top-right');
         });
-     
-        // // Define custom water icon symbol
-        // const symbol = {
-        //     type: 'picture-marker',
-        //     url: 'frontend/src/assets/waterIcon.png', // Specify path to your icon image
-        //     width: '20',  // Adjust width of the icon
-        //     height: 'auto'  // Adjust height of the icon
-        //     };
 
         // Create a new FeatureLayer instance with the specified URL
         const featureLayer = new FeatureLayer({
-            // url: 'https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/water_fountains/FeatureServer'
-            url: 'https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/maui_fresh_water_fountain_locations/FeatureServer'
+            url: 'https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/maui_fresh_water_fountain_locations/FeatureServer/0'
         });
 
         // Add the FeatureLayer to the map 
@@ -90,11 +81,7 @@ const HomePage = () => {
                 url: '../../assets/waterIcon.png',
                 // color: '#06b6d4',
                 width: 10,
-                height: 'auto',
-                // outline: {
-                //     color: [0, 0, 0, 0], // Specify transparent outline
-                //     width: 0 // Set outline width to 0 to make it invisible
-                // }
+                height: 'auto'
             }
         };
         featureLayer.renderer = renderer;
