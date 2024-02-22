@@ -74,10 +74,11 @@ const HomePage = () => {
 
 // Create a new FeatureLayer instance with the specified URL
 const featureLayer = new FeatureLayer({
-    url: 'https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/water_fountains/FeatureServer'
+    // url: 'https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/water_fountains/FeatureServer'
+    url: 'https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/maui_fresh_water_fountain_locations/FeatureServer/0'
 });
 
-// Add the FeatureLayer to the map
+// Add the FeatureLayer to the map 
 map.add(featureLayer);
 
 // Optionally, set a renderer for the feature layer
