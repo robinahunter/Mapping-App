@@ -77,11 +77,10 @@ const HomePage = () => {
         const renderer = {
             type: 'simple',
             symbol: {
-                type: 'picture-marker',
-                url: '../../assets/waterIcon.png',
+                type: 'simple-marker',
+                style: '../../assets/waterIcon.png',
                 // color: '#06b6d4',
-                width: 10,
-                height: 'auto'
+                size: 20,
             }
         };
         featureLayer.renderer = renderer;
