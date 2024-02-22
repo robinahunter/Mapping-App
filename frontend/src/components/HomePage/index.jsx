@@ -14,6 +14,7 @@ import PopupTemplate from "@arcgis/core/PopupTemplate.js";
 // import SimpleRenderer from "@arcgis/core/renderers/SimpleRenderer.js";
 // import calciteIcons from "@esri/calcite-ui-icons/docs/icons.json";
 // import { loadModules } from 'esri-loader';
+import { TailSpin } from "react-loader-spinner";
 
 
 const HomePage = () => {
@@ -22,6 +23,17 @@ const HomePage = () => {
         esriConfig.apiKey = process.env.REACT_APP_ESRI_KEY; // Set your API key from environment variables
         // esriConfig.apiKey = process.env.REACT_APP_MAP_FEATUREDLAYER_KEY; // Set your API key from environment variables
   
+        // Loading spinner
+            const [loading, setLoading] = useState(false);
+          
+            useEffect(() => {
+              setLoading(true);
+              setTimeout(() => {
+                setLoading(false);
+              }, 3000);
+            }, []);
+
+
         // Create a VectorTileLayer from a style URL
         const mapBaseLayer = new VectorTileLayer({
           url: 'https://arcgis.com/sharing/rest/content/items/b5676525747f499687f12746441101ef/resources/styles/root.json',
@@ -75,7 +87,7 @@ const HomePage = () => {
 // Create a new FeatureLayer instance with the specified URL
 const featureLayer = new FeatureLayer({
     // url: 'https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/water_fountains/FeatureServer'
-    url: 'https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/maui_fresh_water_fountain_locations/FeatureServer/0'
+    url: 'https://services8.arcgis.com/T51xV83kzxEuohfL/arcgis/rest/services/maui_fresh_water_fountain_locations/FeatureServer'
 });
 
 // Add the FeatureLayer to the map 
@@ -141,7 +153,12 @@ featureLayer.popupTemplate = popupTemplate;
       initializeArcGIS();
     }, []);
 
-    return <div id="viewDiv" style={{ height: '100vh', width: '100vw', padding: 0, margin: 0 }}></div>;
+    return (
+    <>
+        <div>{loading && <TailSpin />}</div>
+        <div id="viewDiv" style={{ height: '100vh', width: '100vw', padding: 0, margin: 0 }}></div>;
+    </>
+    );
   };
   
   export default HomePage;
