@@ -65,6 +65,13 @@ const HomePage = () => {
             view.ui.add(toggle, 'top-right');
         });
      
+        // // Define custom water icon symbol
+        // const symbol = {
+        //     type: 'picture-marker',
+        //     url: 'frontend/src/assets/waterIcon.png', // Specify path to your icon image
+        //     width: '20',  // Adjust width of the icon
+        //     height: 'auto'  // Adjust height of the icon
+        //     };
 
         // Create a new FeatureLayer instance with the specified URL
         const featureLayer = new FeatureLayer({
@@ -79,14 +86,15 @@ const HomePage = () => {
         const renderer = {
             type: 'simple',
             symbol: {
-                type: 'simple-marker',
-                url: "https://drive.google.com/uc?id=1RE4mTAvWbMKh9XQ9US5Nx_7TXgDjZUkt",
-                color: '#06b6d4',
-                size: 8,
-                outline: {
-                    color: [0, 0, 0, 0], // Specify transparent outline
-                    width: 0 // Set outline width to 0 to make it invisible
-                }
+                type: 'picture-marker',
+                url: '../../assets/waterIcon.png',
+                // color: '#06b6d4',
+                width: 10,
+                height: 'auto',
+                // outline: {
+                //     color: [0, 0, 0, 0], // Specify transparent outline
+                //     width: 0 // Set outline width to 0 to make it invisible
+                // }
             }
         };
         featureLayer.renderer = renderer;
@@ -132,7 +140,7 @@ const HomePage = () => {
         // Simulate a loading delay for demonstration purposes
         setTimeout(() => {
         setLoading(false); // Set loading to false when initialization is complete
-        }, 3000);
+        }, 6000);
       };
     
       initializeArcGIS();
@@ -142,9 +150,9 @@ const HomePage = () => {
     if (loading) {
         return (
         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-            <Skeleton width={400} height={20} color="#ccc" />
-            <Skeleton width={400} height={20} color="#ccc" />
-            <Skeleton width={400} height={20} color="#ccc" />
+            <Skeleton width={400} height={20} />
+            <Skeleton width={400} height={20} />
+            <Skeleton width={400} height={20} />
         </div>
         );
     }
