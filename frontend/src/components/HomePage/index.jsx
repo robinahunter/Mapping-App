@@ -146,19 +146,40 @@ const HomePage = () => {
       initializeArcGIS();
     }, []);
 
-      // If loading, display Skeleton loading placeholders
-    if (loading) {
-        return (
-        <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
-            <Skeleton width={400} height={20} />
-            <Skeleton width={400} height={20} />
-            <Skeleton width={400} height={20} />
-        </div>
-        );
-    }
+    return (
+        <div>
+            {/* Conditionally render skeleton or loading indicator while map is loading */}
+            {loading && (
+                <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+                    <Skeleton width={400} height={20} color="#ccc" />
+                    <Skeleton width={400} height={20} color="#ccc" />
+                    <Skeleton width={400} height={20} color="#ccc" />
+                </div>
+            )}
 
-    // If not loading, return the map view
-    return <div id="viewDiv" style={{ height: '100vh', width: '100vw', padding: 0, margin: 0 }}></div>;
-  };
+            {/* Render 'viewDiv' once map is loaded */}
+            {!loading && (
+                <div id="viewDiv" style={{ height: '100vh', width: '100vw', padding: 0, margin: 0 }}>
+                    {/* SceneView component will be initialized here */}
+                </div>
+            )}
+        </div>
+    );
+};
+
+//       // If loading, display Skeleton loading placeholders
+//     if (loading) {
+//         return (
+//         <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+//             <Skeleton width={400} height={20} />
+//             <Skeleton width={400} height={20} />
+//             <Skeleton width={400} height={20} />
+//         </div>
+//         );
+//     }
+
+//     // If not loading, return the map view
+//     return <div id="viewDiv" style={{ height: '100vh', width: '100vw', padding: 0, margin: 0 }}></div>;
+//   };
   
   export default HomePage;
