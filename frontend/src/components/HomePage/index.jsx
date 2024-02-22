@@ -82,8 +82,8 @@ const HomePage = () => {
                 color: '#06b6d4',
                 size: 8,
                 outline: {
-                    color: [0, 0, 0, 0], // Specify transparent outline
-                    width: 0 // Set outline width to 0 to make it invisible
+                    color: [0, 0, 128, 1], // Specify transparent outline
+                    width: 1 // Set outline width to 0 to make it invisible
                 }
             }
         };
