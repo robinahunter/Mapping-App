@@ -80,7 +80,7 @@ const HomePage = () => {
                 type: 'simple-marker',
                 url: "../../assets/water-drop-maui-01.svg",
                 color: '#06b6d4',
-                size: 20,
+                size: 12,
                 outline: {
                     color: [4, 144, 169, 1], // Specify transparent outline
                     width: 1 // Set outline width to 0 to make it invisible
@@ -121,8 +121,17 @@ const HomePage = () => {
 
                 {
                     type: 'text',
-                    text: '<a href="https://www.google.com/maps/search/?api=1&query={Latitude},{Longitude}" target="_blank">Get Directions</a>'
-                }
+                    text: '{Address}'
+                },
+                {
+                    type: 'text',
+                    text: '{City}, {State}'
+                },
+                {
+                    type: 'text',
+                    text: '{Latitude}, {Longitude}'
+                },
+
             ]
         };
         featureLayer.popupTemplate = popupTemplate;
