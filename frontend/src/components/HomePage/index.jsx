@@ -80,10 +80,10 @@ const HomePage = () => {
                 type: 'simple-marker',
                 url: "../../assets/water-drop-maui-01.svg",
                 color: '#06b6d4',
-                size: 8,
+                size: 10,
                 outline: {
-                    color: [0, 0, 128, 1], // Specify transparent outline
-                    width: 1 // Set outline width to 0 to make it invisible
+                    color: [0, 0, 128, 0.5], // Specify transparent outline
+                    width: 0.25 // Set outline width to 0 to make it invisible
                 }
             }
         };
