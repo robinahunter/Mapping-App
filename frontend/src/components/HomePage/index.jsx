@@ -80,10 +80,10 @@ const HomePage = () => {
                 type: 'simple-marker',
                 url: "../../assets/water-drop-maui-01.svg",
                 color: '#06b6d4',
-                size: 10,
+                size: 20,
                 outline: {
-                    color: [0, 0, 128, 0.5], // Specify transparent outline
-                    width: 0.25 // Set outline width to 0 to make it invisible
+                    color: [4, 144, 169, 1], // Specify transparent outline
+                    width: 1 // Set outline width to 0 to make it invisible
                 }
             }
         };
@@ -105,19 +105,19 @@ const HomePage = () => {
                     type: 'text',
                     text: `<a href="https://www.mauinuiahupuaaproject.com/ahupuaa" target="_blank">Learn More About Maui's Water</a>`
                 },
-                {
-                    type: 'media',
-                    mediaInfos: [
-                        {
-                            type: 'image',
-                            value: {
-                                sourceURL: '{image}',
-                                width: '25vw', // Adjust the width of the image to fit the popup
-                                height: 'auto' // Maintain aspect ratio
-                            }
-                        }
-                    ]
-                },
+                // {
+                //     type: 'media',
+                //     mediaInfos: [
+                //         {
+                //             type: 'image',
+                //             value: {
+                //                 sourceURL: '{image}',
+                //                 width: '25vw', // Adjust the width of the image to fit the popup
+                //                 height: 'auto' // Maintain aspect ratio
+                //             }
+                //         }
+                //     ]
+                // },
 
                 {
                     type: 'text',
