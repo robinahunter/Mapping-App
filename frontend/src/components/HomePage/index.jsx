@@ -31,7 +31,7 @@ const HomePage = () => {
         });
         
         const map = new Map({
-            basemap: 'arcgis/topographic', //streets-navigation-vector, arcgis/topographic, customBasemap
+            basemap: 'streets', //streets-navigation-vector, arcgis/topographic, customBasemap, 'streets'
             ground: 'world-elevation',
         });
 
