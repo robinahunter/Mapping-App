@@ -193,7 +193,7 @@ function App() {
 
 
     {/* Footer */}
-    <div className="mx-auto w-[50vw] flex flex-row justify-between items-center mb-0">
+    <div className="social-icons mx-auto w-[50vw] flex flex-row justify-between items-center mb-0">
       <a href="https://www.instagram.com"><img className="w-6" src="https://i.postimg.cc/Bvh14y8F/instagram-icon-WHT.png" /></a>
       <a href="https://www.facebook.com/"><img className="w-6" src="https://i.postimg.cc/9QY7NzCJ/facebook-icon-WHT.png" /></a>
     </div>

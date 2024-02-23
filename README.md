@@ -29,11 +29,14 @@ Desktop View
 https://github.com/robinahunter/Mapping-App.git
 
 ## Hosted Site on Github-Pages
-
+https://robinahunter.github.io/Mapping-App
 
 ## User Stories
+As a environmentally-conscious resident or visitor to Maui, I want to easily locate and access freshwater fountains across the island, so that I can reduce my consumption of single-use plastic bottles and learn about the unique water sources of Maui.
 
->
+As a curious traveler exploring the beauty of Maui, I want to use the app to discover the cultural significance and stories behind the freshwater sources across the island, enriching my understanding of Hawaiian heritage and fostering a deeper connection with the land.
+
+As a student passionate about Hawaiian culture and history, I want to use the app to delve deeper into the intricate relationship between freshwater sources and traditional Hawaiian land management practices, enhancing my understanding of indigenous wisdom and stewardship principles.
 
 ## Stretch Goals 
 As stretch goals the app will feature a scavenger hunt across the island, and users can earn a prize, such as a custom water flask. The app will also have interactive features such as, if a user is near a water fountain, information about it will pop up.

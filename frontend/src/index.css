@@ -103,3 +103,6 @@ button:focus-visible {
   width: 100%;
   outline: none; /* or outline-width: 0; */
 }
+.social-icons {
+  position: fixed;
+}
