@@ -13,6 +13,7 @@ const LearnMorePage = () => {
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v9',
+            mapboxAccessToken: "REACT_APP_MAPBOX_ACCESS_TOKEN",
             center: [-156.700589, 20.816663], // lng, lat
             zoom: 9,
             pitchWithRotate: false,
