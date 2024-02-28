@@ -21,6 +21,8 @@ import './style.css'; // Import the CSS file
 
 const LearnMorePage = () => {
     useEffect(() => {
+        console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN);
+        
         mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
 
 
