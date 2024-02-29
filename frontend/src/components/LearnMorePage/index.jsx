@@ -5,15 +5,17 @@ import './style.css'; // Import the CSS file
 
 const LearnMorePage = () => {
     useEffect(() => {
-        console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN);
-        
-        mapboxAccessToken = `process.env.REACT_APP_MAPBOX_ACCESS_TOKEN`;
+        // console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN);
+        // mapboxAccessToken = `process.env.REACT_APP_MAPBOX_ACCESS_TOKEN`;
+
+        mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN; // Ensure you have this variable in your .env file
+        console.log(import.meta.env.VITE_MAPBOX_ACCESS_TOKEN);
 
 
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v9',
-            accessToken: "REACT_APP_MAPBOX_ACCESS_TOKEN",
+            mapboxAccessToken: `process.env.REACT_APP_MAPBOX_ACCESS_TOKEN`,
             center: [-156.700589, 20.816663], // lng, lat
             zoom: 9,
             pitchWithRotate: false,
