@@ -7,7 +7,7 @@ const LearnMorePage = () => {
     useEffect(() => {
         console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN);
         
-        mapboxAccessToken = process.env.REACT_APP_MAPBOX_ACCESS_TOKEN;
+        mapboxAccessToken = `process.env.REACT_APP_MAPBOX_ACCESS_TOKEN`;
 
 
         const map = new mapboxgl.Map({
