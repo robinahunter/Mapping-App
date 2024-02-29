@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { Routes, Route, Link } from 'react-router-dom';
-import MauiNuiWai from '../../assets/MauiNuiWai.svg';
-import HomePage from '../HomePage';
-import UserPage from '../UserPage';
-import LearnMorePage from '../LearnMorePage';
-import NotFoundPage from '../NotFoundPage';
-import AuthFormPage from '../AuthFormPage';
+import React, { useState, useEffect } from "react";
+import { Routes, Route, Link } from "react-router-dom";
+import MauiNuiWai from "../../assets/MauiNuiWai.svg";
+import HomePage from "../HomePage";
+import UserPage from "../UserPage";
+import LearnMorePage from "../LearnMorePage";
+import NotFoundPage from "../NotFoundPage";
+import AuthFormPage from "../AuthFormPage";
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -27,12 +27,16 @@ function App() {
         <nav className="flex mx-auto justify-between items-center">
           <div className="flex w-[90vw] justify-between items-center md:hidden">
             <Link to="/Mapping-App" onClick={toggleMenu}>
-              <div className='block justify-between'>
+              <div className="block justify-between">
                 <h2 className="text-lg">MauiNuiWai | Wai = Water</h2>
               </div>
             </Link>
             <div className="flex items-center">
-              <button type="button" onClick={toggleMenu} className="justify-between">
+              <button
+                type="button"
+                onClick={toggleMenu}
+                className="justify-between"
+              >
                 <div className="bg-cyan-500 px-4 pt-1 rounded"></div>
                 <div className="bg-cyan-500 px-4 pt-1 mt-1 rounded"></div>
                 <div className="bg-cyan-500 px-4 pt-1 mt-1 rounded"></div>
@@ -53,7 +57,7 @@ function App() {
                   </li>
                 </ul>
               </div> */}
-              <div className='flex justify-between'>
+              <div className="flex justify-between">
                 <h2 className="text-lg">MauiNuiWai | Wai = Water</h2>
               </div>
             </Link>
@@ -115,31 +119,31 @@ function App() {
       )}
 
       <div className="hidden mx-auto md:flex md:items-center md:w-auto max-w-4xl">
-      <Link to="/Mapping-App" className="flex justify-center items-center">              
-              <div className="flex">
-                <ul className="pl-4">
-                  <li className="w-9 justify-between">
-                    <img src={MauiNuiWai} alt="MauiNuiWai" />
-                  </li>
-                </ul>
-              </div>
-        <div className='flex pl-4 justify-center inline-flex'>
-          <h2 className="p-0.5 text-xl">MauiNuiWai | Wai = Water</h2>
+        <Link to="/Mapping-App" className="flex justify-center items-center">
+          <div className="flex">
+            <ul className="pl-4">
+              <li className="w-9 justify-between">
+                <img src={MauiNuiWai} alt="MauiNuiWai" />
+              </li>
+            </ul>
+          </div>
+          <div className="flex pl-4 justify-center inline-flex">
+            <h2 className="p-0.5 text-xl">MauiNuiWai | Wai = Water</h2>
+          </div>
+        </Link>
+        <div className="flex-grow">
+          <ul className="flex justify-end text-xs font-medium">
+            <li>
+              <Link to="/learnMore">
+                <p className="p-2 hover:text-cyan-500">Learn More</p>
+              </Link>
+            </li>
+          </ul>
         </div>
-      </Link>
-      <div className="flex-grow">
-        <ul className="flex justify-end text-xs font-medium">
-          <li>
-            <Link to="/learnMore">
-              <p className="p-2 hover:text-cyan-500">Learn More</p>
-            </Link>
-          </li>
-        </ul>
-      </div>
 
-      {isAuthenticated ? (
-        <>
-          {/* <div className="flex-grow">
+        {isAuthenticated ? (
+          <>
+            {/* <div className="flex-grow">
             <ul className="flex justify-center text-xs font-medium">
               <li>
                 <Link to="/logout" onClick={handleLogout}>
@@ -157,10 +161,10 @@ function App() {
               </li>
             </ul>
           </div> */}
-        </>
-      ) : (
-        <>
-          {/* <div className="flex-grow">
+          </>
+        ) : (
+          <>
+            {/* <div className="flex-grow">
             <ul className="flex justify-center text-xs font-medium">
               <li>
                 <Link to="/auth/signup">
@@ -178,27 +182,50 @@ function App() {
               </li>
             </ul>
           </div> */}
-        </>
-      )}
-    </div>
+          </>
+        )}
+      </div>
 
-    <Routes>
-      <Route path="/learnMore" element={<LearnMorePage />} />
-      <Route path="/Mapping-App" element={<HomePage isAuthenticated={isAuthenticated} setIsAuthenticated={setIsAuthenticated} />} />
-      <Route path="/auth/:formType" element={<AuthFormPage setIsAuthenticated={setIsAuthenticated} />} />
-      <Route path="/logout" element={<AuthFormPage setIsAuthenticated={setIsAuthenticated} />} />
-      <Route path="/user/:id" element={<UserPage />} />
-      <Route path="/*" element={<NotFoundPage />} />
-    </Routes>
+      <Routes>
+        <Route path="/learnMore" element={<LearnMorePage />} />
+        <Route
+          path="/Mapping-App"
+          element={
+            <HomePage
+              isAuthenticated={isAuthenticated}
+              setIsAuthenticated={setIsAuthenticated}
+            />
+          }
+        />
+        <Route
+          path="/auth/:formType"
+          element={<AuthFormPage setIsAuthenticated={setIsAuthenticated} />}
+        />
+        <Route
+          path="/logout"
+          element={<AuthFormPage setIsAuthenticated={setIsAuthenticated} />}
+        />
+        <Route path="/user/:id" element={<UserPage />} />
+        <Route path="/*" element={<NotFoundPage />} />
+      </Routes>
 
-
-    {/* Footer */}
-    <div className="social-icons mx-auto w-[50vw] flex flex-row justify-between items-center mb-0">
-      <a href="https://www.instagram.com"><img className="w-6" src="https://i.postimg.cc/Bvh14y8F/instagram-icon-WHT.png" /></a>
-      <a href="https://www.facebook.com/"><img className="w-6" src="https://i.postimg.cc/9QY7NzCJ/facebook-icon-WHT.png" /></a>
-    </div>
-  </>
-);
+      {/* Footer */}
+      <div className="social-icons mx-auto w-[50vw] flex flex-row justify-between items-center mb-0">
+        <a href="https://www.instagram.com">
+          <img
+            className="w-6"
+            src="https://i.postimg.cc/Bvh14y8F/instagram-icon-WHT.png"
+          />
+        </a>
+        <a href="https://www.facebook.com/">
+          <img
+            className="w-6"
+            src="https://i.postimg.cc/9QY7NzCJ/facebook-icon-WHT.png"
+          />
+        </a>
+      </div>
+    </>
+  );
 }
 
 export default App;

@@ -12,7 +12,7 @@
 //   });
 //   // Implement the Log Out functionality
 //   const handleLogOut = async () => {
-//       await logOut(); //logOut function 
+//       await logOut(); //logOut function
 //       localStorage.removeItem('userToken'); // Remove the user's token from localStorage
 //       navigate('/'); // Redirect to the home page after logging out
 //   }
@@ -46,7 +46,7 @@
 //       }
 //       // redirect to the user page after signing/logging in
 //   }
-  
+
 //   return (
 //       <div>
 //         <div className="flex pl-4 justify-center mx-auto">
@@ -170,7 +170,10 @@ export default function AuthFormPage({ setIsAuthenticated }) {
           <form className="space-y-6" onSubmit={handleSubmit}>
             {formType === "signup" && (
               <div>
-                <label className="block text-gray-100 font-bold mb-2" htmlFor="name">
+                <label
+                  className="block text-gray-100 font-bold mb-2"
+                  htmlFor="name"
+                >
                   Name
                 </label>
                 <input
@@ -186,7 +189,10 @@ export default function AuthFormPage({ setIsAuthenticated }) {
               </div>
             )}
             <div>
-              <label className="block text-gray-100 font-bold mb-2" htmlFor="email">
+              <label
+                className="block text-gray-100 font-bold mb-2"
+                htmlFor="email"
+              >
                 Email
               </label>
               <input
@@ -201,7 +207,10 @@ export default function AuthFormPage({ setIsAuthenticated }) {
               />
             </div>
             <div>
-              <label className="block text-gray-100 font-bold mb-2" htmlFor="password">
+              <label
+                className="block text-gray-100 font-bold mb-2"
+                htmlFor="password"
+              >
                 Password
               </label>
               <input

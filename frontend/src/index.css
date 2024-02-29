@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -76,7 +75,6 @@ button {
   font-family: inherit;
   background-color: #1a1a1a;
   cursor: pointer;
-
 }
 /* button:hover {
   border-color: #646cff;
@@ -106,23 +104,28 @@ button:focus-visible {
 .social-icons {
   position: fixed;
 }
-#map { position: absolute; top: 0; bottom: 0; width: 100%; }
+#map {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
 .mapboxgl-popup-content {
-    /* Add your styles here */
-    background-color: white;
-    color: black;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add your styles here */
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 /* Additional styling for headings and paragraphs inside the popup */
 .mapboxgl-popup-content h3 {
-    font-size: 16px;
-    margin-bottom: 5px;
+  font-size: 16px;
+  margin-bottom: 5px;
 }
 
 .mapboxgl-popup-content p {
-    font-size: 14px;
-    margin-bottom: 5px;
+  font-size: 14px;
+  margin-bottom: 5px;
 }
