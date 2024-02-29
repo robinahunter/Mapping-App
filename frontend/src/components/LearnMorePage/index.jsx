@@ -1,7 +1,8 @@
 import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-import './style.css'; // Import the CSS file
+import mauiLocations from 'frontend/src/data/mauiLocations.geojson';
+// import './style.css'; // Import the CSS file
 
 const LearnMorePage = () => {
     useEffect(() => {
@@ -9,13 +10,11 @@ const LearnMorePage = () => {
         // mapboxAccessToken = `process.env.REACT_APP_MAPBOX_ACCESS_TOKEN`;
 
         mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN; // Ensure you have this variable in your .env file
-        console.log(import.meta.env.VITE_MAPBOX_ACCESS_TOKEN);
-
 
         const map = new mapboxgl.Map({
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v9',
-            mapboxAccessToken: `process.env.REACT_APP_MAPBOX_ACCESS_TOKEN`,
+            // mapboxAccessToken: `process.env.REACT_APP_MAPBOX_ACCESS_TOKEN`,
             center: [-156.700589, 20.816663], // lng, lat
             zoom: 9,
             pitchWithRotate: false,
@@ -25,6 +24,8 @@ const LearnMorePage = () => {
 
         map.on('load', () => {
             map.setFog({});
+
+            // Load and add the image for custom markers
             map.loadImage(
                 'https://raw.githubusercontent.com/robinahunter/maui-fountain-images/4801ee115bc36e67c5fd53e5d1243a470eb9baf0/water-drop-maui.png',
                 (error, image) => {
@@ -32,15 +33,15 @@ const LearnMorePage = () => {
 
                     map.addImage('custom-marker', image);
 
-                    map.addSource('maui-locations', {
+                    map.addSource('mauiLocations', {
                         type: 'geojson',
-                        data: 'data/maui-locations.geojson',
+                        data: mauiLocations,
                     });
 
                     map.addLayer({
-                        id: 'maui-locations-symbol',
+                        id: 'mauiLocations-symbol',
                         type: 'symbol',
-                        source: 'maui-locations',
+                        source: 'mauiLocations',
                         layout: {
                             'icon-image': 'custom-marker',
                             'icon-allow-overlap': true,
@@ -49,9 +50,9 @@ const LearnMorePage = () => {
                     });
 
                     map.addLayer({
-                        id: 'maui-locations-shadow',
+                        id: 'mauiLocations-shadow',
                         type: 'symbol',
-                        source: 'maui-locations',
+                        source: 'mauiLocations',
                         layout: {
                             'icon-image': 'marker-15',
                             'icon-allow-overlap': true,
@@ -64,7 +65,7 @@ const LearnMorePage = () => {
                         },
                     });
 
-                    map.on('click', 'maui-locations-symbol', (e) => {
+                    map.on('click', 'mauiLocations-symbol', (e) => {
                         const coordinates = e.features[0].geometry.coordinates.slice();
                         const properties = e.features[0].properties;
 
@@ -92,6 +93,7 @@ const LearnMorePage = () => {
                 }
             );
 
+            
             // Spin functionality
             let userInteracting = false;
             const spinEnabled = true;
