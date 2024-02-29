@@ -1,20 +1,19 @@
-import React, { useEffect } from 'react';
-import mapboxgl from 'mapbox-gl';
-import 'mapbox-gl/dist/mapbox-gl.css';
-import mauiLocations from '../../data/mauiLocations.geojson';
+import React, { useEffect } from "react";
+import mapboxgl from "mapbox-gl";
+import "mapbox-gl/dist/mapbox-gl.css";
+import mauiLocations from "../../data/mauiLocations.geojson";
 
 const LearnMorePage = () => {
-    let map; // Declare map variable outside of useEffect
-
-    useEffect(() => {
+  useEffect(() => {
         // console.log(process.env.REACT_APP_MAPBOX_ACCESS_TOKEN);
         // mapboxAccessToken = `process.env.REACT_APP_MAPBOX_ACCESS_TOKEN`;
 
-      mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN; // Ensure you have this variable in your .env file
+    mapboxgl.accessToken = import.meta.env.VITE_MAPBOX_ACCESS_TOKEN; // Ensure you have this variable in your .env file
 
-    map = new mapboxgl.Map({
+    const map = new mapboxgl.Map({
       container: "map",
       style: "mapbox://styles/mapbox/streets-v9",
+      mapboxAccessToken: `process.env.REACT_APP_MAPBOX_ACCESS_TOKEN`,
       center: [-156.700589, 20.816663], // lng, lat
       zoom: 9,
       pitchWithRotate: false,
@@ -24,7 +23,6 @@ const LearnMorePage = () => {
 
     map.on("load", () => {
       map.setFog({});
-
       // Load and add the image for custom markers
       map.loadImage(
         "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/4801ee115bc36e67c5fd53e5d1243a470eb9baf0/water-drop-maui.png",
@@ -49,21 +47,21 @@ const LearnMorePage = () => {
             },
           });
 
-          map.addLayer({
-            id: "mauiLocations-shadow",
-            type: "symbol",
-            source: "mauiLocations",
-            layout: {
-              "icon-image": "marker-15",
-              "icon-allow-overlap": true,
-              "icon-size": 0.09,
-              "icon-offset": [0, 5],
-            },
-            paint: {
-              "icon-opacity": 0.5,
-              "icon-color": "#000000",
-            },
-          });
+          // map.addLayer({
+          //   id: "mauiLocations-shadow",
+          //   type: "symbol",
+          //   source: "mauiLocations",
+          //   layout: {
+          //     "icon-image": "marker-15",
+          //     "icon-allow-overlap": true,
+          //     "icon-size": 0.09,
+          //     "icon-offset": [0, 5],
+          //   },
+          //   paint: {
+          //     "icon-opacity": 0.5,
+          //     "icon-color": "#000000",
+          //   },
+          // });
 
           map.on("click", "mauiLocations-symbol", (e) => {
             const coordinates = e.features[0].geometry.coordinates.slice();
@@ -133,9 +131,7 @@ const LearnMorePage = () => {
     return () => map.remove();
   }, []);
 
-  return <div id="map" style={{ width: "100%", height: "100%", padding: 0, margin: 0 }} />;
+  return <div id="map" style={{ width: "100%", height: "100vh" }} />;
 }
 
 export default LearnMorePage;
-
-
