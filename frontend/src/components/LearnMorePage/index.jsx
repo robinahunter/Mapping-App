@@ -188,7 +188,8 @@
 
 import { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl'; // Import Mapbox GL JS
-import mauiLocations from './mauiLocations'; // Import data for Maui locations
+import mauiLocations from './mauiLocations.geojson'; // Import data for Maui locations
+import './mapboxGl.css';
 
 const LearnMorePage = () => {
   useEffect(() => {
