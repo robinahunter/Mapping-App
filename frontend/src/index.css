@@ -51,9 +51,7 @@ h1 {
   will-change: filter;
   transition: filter 300ms;
 }
-/* .logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-} */
+
 .logo.vanilla:hover {
   filter: drop-shadow(0 0 2em #f7df1eaa);
 }
@@ -76,13 +74,6 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
 }
-/* button:hover {
-  border-color: #646cff;
-} */
-/* button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-} */
 
 @media (prefers-color-scheme: light) {
   :root {
