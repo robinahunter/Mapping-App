@@ -104,28 +104,4 @@ button:focus-visible {
 .social-icons {
   position: fixed;
 }
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-.mapboxgl-popup-content {
-  /* Add your styles here */
-  background-color: white;
-  color: black;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
 
-/* Additional styling for headings and paragraphs inside the popup */
-.mapboxgl-popup-content h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
-}
-
-.mapboxgl-popup-content p {
-  font-size: 14px;
-  margin-bottom: 5px;
-}
