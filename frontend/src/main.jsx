@@ -5,11 +5,10 @@ import App from "./components/App";
 import "./index.css";
 import { ThemeProvider } from "@material-tailwind/react";
 
-ReactDOM.render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <Router>
     <ThemeProvider>
-      <App />
+    <App />
     </ThemeProvider>
   </Router>,
-  document.getElementById("root"),
-);
+)
