@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import mapboxgl from 'mapbox-gl';
 import 'mapbox-gl/dist/mapbox-gl.css';
-// import mauiLocations from './mauiLocations.geojson';
+import mauiLocations from './mauiLocations.json';
 
 const LearnMorePage = () => {
     useEffect(() => {
@@ -21,7 +21,7 @@ const LearnMorePage = () => {
         map.on('load', () => {
             map.setFog({});
             map.loadImage(
-                'https://raw.githubusercontent.com/robinahunter/maui-fountain-images/4801ee115bc36e67c5fd53e5d1243a470eb9baf0/water-drop-maui.png',
+                'https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/water-drop-shadow-maui.png',
                 (error, image) => {
                     if (error) throw error;
 
@@ -29,8 +29,10 @@ const LearnMorePage = () => {
 
                     map.addSource('mauiLocations', {
                         type: 'geojson',
-                        data: './mauiLocations.geojson',
+                        data: mauiLocations,
                     });
+                    console.log(mauiLocations);
+
 
                     map.addLayer({
                         id: 'mauiLocations-symbol',
