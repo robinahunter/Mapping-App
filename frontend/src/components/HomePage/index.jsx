@@ -13,7 +13,7 @@ const HomePage = () => {
             container: 'map',
             style: 'mapbox://styles/mapbox/streets-v9',
             center: [-156.700589, 20.816663], // lng, lat
-            zoom: 10,
+            zoom: 8,
             pitchWithRotate: false,
         });
 
