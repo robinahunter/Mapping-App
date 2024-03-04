@@ -21,7 +21,7 @@ const HomePage = () => {
 
         map.on('load', () => {
             map.setFog({});
-            map.loadImage(
+            map.loadImage(//raw.githubusercontent.com/
                 'https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/water-drop-shadow-maui.png',
                 (error, image) => {
                     if (error) throw error;
