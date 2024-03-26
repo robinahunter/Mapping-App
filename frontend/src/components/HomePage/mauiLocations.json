@@ -31,7 +31,7 @@
         "Address": "Calasa Rd",
         "City": "Kula",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -51,7 +51,7 @@
         "Address": "17 Kilohana Dr",
         "City": "Kihei",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -71,7 +71,7 @@
         "Address": "100 Ho'okele St",
         "City": "Kahului",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -111,7 +111,7 @@
         "Address": "Hana Hwy",
         "City": "Hana",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -131,7 +131,7 @@
         "Address": "HI-30",
         "City": "Lahaina",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -139,7 +139,8 @@
           -156.685,
           20.9028
         ]
-      }
+      },
+      "id": 6
     },
     {
       "type": "Feature",
@@ -151,7 +152,7 @@
         "Address": "220 Kolapa Pl",
         "City": "Molokai",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -171,7 +172,7 @@
         "Address": "240 W Kamehameha",
         "City": "Molokai",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -191,7 +192,7 @@
         "Address": "Baldwin Park",
         "City": "Paia",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -211,7 +212,7 @@
         "Address": "Hana Hwy at Pilialoha St",
         "City": "Haiku",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -231,7 +232,7 @@
         "Address": "Kaihoi St & Kaiolohia St",
         "City": "Kihei",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -251,7 +252,7 @@
         "Address": "Makomako St",
         "City": "Makawao",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -271,7 +272,7 @@
         "Address": "Lower Kula Rd",
         "City": "Kula",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -291,7 +292,7 @@
         "Address": "399 Hauoli St",
         "City": "Maalaea",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -311,7 +312,7 @@
         "Address": "Mile #9 Hana Hwy",
         "City": "Paia",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -371,7 +372,7 @@
         "Address": "E Aiai St",
         "City": "Kahului",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -391,7 +392,7 @@
         "Address": "2550 S Kihei Rd",
         "City": "Kihei",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -411,7 +412,7 @@
         "Address": "2800 S Kihei Rd",
         "City": "Kihei",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -431,7 +432,7 @@
         "Address": "Amala Pl",
         "City": "Kahului",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -451,7 +452,7 @@
         "Address": "Ainoa St & Ala Malama Ave",
         "City": "Molokai",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -471,7 +472,7 @@
         "Address": "Route 460 South",
         "City": "Molokai",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -491,7 +492,7 @@
         "Address": "711 Frasier Ave",
         "City": "Lanai City",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -511,7 +512,7 @@
         "Address": "Frasier Ave",
         "City": "Lanai City",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -531,7 +532,7 @@
         "Address": "150 Kanoloa Ave",
         "City": "Kahului",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -551,7 +552,7 @@
         "Address": "131 S Kihei Rd",
         "City": "Kihei",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
@@ -571,13 +572,53 @@
         "Address": "700 Halia Nakoa St",
         "City": "Wailuku",
         "State": "HI",
-        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/DrinkingFountain-web.jpg"
+        "Image": ""
       },
       "geometry": {
         "type": "Point",
         "coordinates": [
           -156.4859409,
           20.8941192
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Id": 31,
+        "Type": "Drinking Fountain",
+        "Location": "The Westin Maui Resort and Spa - Lobby",
+        "LocationType": "Hotel",
+        "Address": "2365 Kaanapali Pkwy",
+        "City": "Lahaina",
+        "State": "HI",
+        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/WestinHotel-Kaanapali-web.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -156.6954547,
+          20.9196332
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Id": 32,
+        "Type": "Drinking Fountain",
+        "Location": "Kahului Airport ",
+        "LocationType": "Airport",
+        "Address": "1 Keolani Pl",
+        "City": "Kahului",
+        "State": "HI",
+        "Image": "https://raw.githubusercontent.com/robinahunter/maui-fountain-images/main/KahuluiAirport-Lower-web.jpg"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -156.43713,
+          20.8927108
         ]
       }
     }
